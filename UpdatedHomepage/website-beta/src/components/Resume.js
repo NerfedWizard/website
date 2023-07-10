@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import aws from './../assests/aws.svg';
 import mysql from './../assests/mysql.svg';
 import python from './../assests/python.svg';
@@ -6,7 +6,7 @@ import react from './../assests/react.svg';
 import css from './../assests/css.svg';
 import java from './../assests/java.svg';
 // import '../images/js.svg';
-import html from './../assests/html.svg';
+// import html from './../assests/html.svg';
 import js from './../assests/js.svg';
 import './../App.css';
 import { useNavigate } from 'react-router-dom';
@@ -25,7 +25,7 @@ function Resume() {
     return (
         <div class="main-grid">
             <main>
-                <button onClick={handleHome}>Home</button>
+                <button class="custom-button" onClick={handleHome}>Home</button>
                 <p class="eyebrow">Skills & Experience</p>
                 <h1 class="page-title">My Website Beta</h1>
                 <p class="intro">
@@ -87,7 +87,7 @@ function Resume() {
 
             <aside>
                 <h2 class="visually-hidden">My Skills</h2>
-                <ul class="icon-list" role="list">
+                <ul class="icon-list" role=" ">
                     {/* <li>
                         <p class="visually-hidden">html</p>
                         <img src={html} alt="html" />
