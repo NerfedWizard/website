@@ -9,14 +9,14 @@ import java from './../assests/java.svg';
 // import html from './../assests/html.svg';
 import js from './../assests/js.svg';
 import './../App.css';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 
 function Resume() {
-    const navigate = useNavigate();
-    const handleHome = () => {
-        navigate("/");
-    }
+    // const navigate = useNavigate();
+    // const handleHome = () => {
+    //     navigate("/");
+    // }
     return (
         <div class="main-grid">
 

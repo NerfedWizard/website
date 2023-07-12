@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import React, { Fragment } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menubar from './components/Menubar';
+import EmailContactForm from './components/Messaging/Email';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/resume' element={<Resume />} />
         <Route path='/quotes' element={<Quotes />} />
+        <Route path='/email' element={<EmailContactForm />} />
       </Routes>
     </BrowserRouter>
   );

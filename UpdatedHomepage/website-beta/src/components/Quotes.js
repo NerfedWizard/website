@@ -1,11 +1,11 @@
 import React, { useState, useId } from 'react';
 import quotes from '../Data/quoteData';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import './../App.css';
 
 
 function Quotes() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [index, setIndex] = useState(0);
     const [searched, setSearched] = useState('');
     const id = useId();
@@ -101,6 +101,8 @@ function Quotes() {
             setFlag(true);
         }
     }
+    //Before menu bar 
+    
     // const handleHome = () => {
     //     // alert("You're about to head back to the homepage?");
     //     navigate("/");
