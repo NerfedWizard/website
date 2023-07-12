@@ -13,8 +13,8 @@ function HomePage() {
     }
     return (
         <div class="main-page">
-            <button class="custom-button" onClick={handleResume}>Resume</button>
-            <button class="custom-button" onClick={handleQuote}>Quotes Program</button>
+            {/* <button class="custom-button" onClick={handleResume}>Resume</button>
+            <button class="custom-button" onClick={handleQuote}>Quotes Program</button> */}
             <div class="homepageGrid">
                 She my honeyiest favorite!!!
                 <img src={couple} alt="Cute Couple" />

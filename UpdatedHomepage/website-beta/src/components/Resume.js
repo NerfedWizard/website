@@ -17,15 +17,11 @@ function Resume() {
     const handleHome = () => {
         navigate("/");
     }
-    // const [htmlSvg] = useState("html.svg");
-    // const [svg, setSvg] = useState([{
-
-
-    // }])
     return (
         <div class="main-grid">
+
             <main>
-                <button class="custom-button" onClick={handleHome}>Home</button>
+                {/* <button class="custom-button" onClick={handleHome}>Home</button> */}
                 <p class="eyebrow">Skills & Experience</p>
                 <h1 class="page-title">My Website Beta</h1>
                 <p class="intro">

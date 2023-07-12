@@ -101,10 +101,10 @@ function Quotes() {
             setFlag(true);
         }
     }
-    const handleHome = () => {
-        // alert("You're about to head back to the homepage?");
-        navigate("/");
-    }
+    // const handleHome = () => {
+    //     // alert("You're about to head back to the homepage?");
+    //     navigate("/");
+    // }
     const backButton = () => {
         if (flag) {
             setIndex(index - 1);
@@ -114,48 +114,45 @@ function Quotes() {
         }
     }
     return (
-        <div className="gradient">
-            <nav className="columns">
-                <button className="custom-button" onClick={handleClck}>Random Quote</button>
-                <input className="custom-input" type="search" onChange={handleSearch} placeholder="Author, Category or Tag">
+        <div class="gradient-quotes">
+            <nav class="columns-quotes">
+                <button class="custom-button" onClick={handleClck}>Random Quote</button>
+                <input class="custom-input" type="search" onChange={handleSearch} placeholder="Author, Category or Tag">
                 </input>
-                <button className="custom-button" onClick={onSubmit}>Search</button>
-
-                <button className="custom-home-button" onClick={handleHome}>Home</button>
+                <button class="custom-button" onClick={onSubmit}>Search</button>
             </nav>
-            <main className="card border-primary">
+            <div class="card-quotes  ">
                 <nav class="columns">
-                    {flag ? <button className="custom-button" onClick={backButton}>Back </button> : null
+                    {flag ? <button class="custom-button" onClick={backButton}>Back </button> : null
                     }
-                    {flag ? <button className="custom-button" onClick={handleNext}>Next </button> : null
+                    {flag ? <button class="custom-button" onClick={handleNext}>Next </button> : null
                     }
                 </nav>
                 <article>
-                    <p className="setFont" key={quoteList.length - index}>Total Quotes in Set: {quoteList.length - index}</p>
+                    <p class="setFont" key={quoteList.length - index}>Total Quotes in Set: {quoteList.length - index}</p>
                     <p key={quoteList[index].Author}>
-                        <button className="custom-author-button" onClick={handleAuthorClick}>
+                        <button class="custom-author-button" onClick={handleAuthorClick}>
                             {quoteList[index].Author}
                         </button>
                     </p>
-                    <q className="card-quote" key={quoteList[index].Quote}>
+                    <q class="card-quote" key={quoteList[index].Quote}>
                         {quoteList[index].Quote}
                     </q>
-                    <p key={quoteList[index].Category}><button className="custom-category-button" onClick={handleCategoryClick}>
+                    <p key={quoteList[index].Category}><button class="custom-category-button" onClick={handleCategoryClick}>
                         {quoteList[index].Category}
                     </button>
                     </p>
-                    <div className="tag-grid grid-col-span-2" >
+                    <div class="tag-grid grid-col-span-2" >
                         {quoteList[index].Tags.map(tag => (
                             <p key={tag}>
-                                <button className="custom-tag-button" onClick={handleTagClick} >
+                                <button class="custom-tag-button" onClick={handleTagClick} >
                                     {tag}
                                 </button>
                             </p>
                         ))}
                     </div>
                 </article>
-            </main>
-
+            </div>
         </div >
     );
 }
