@@ -16,9 +16,9 @@ const EmailContactForm = () => {
 
         emailjs.sendForm('gmail_service', 'gmail_template_v1', form.current, 'x9UhByYCe3sWkQKuQ')
             .then((result) => {
-                // show the user a success message
+                console.log(result);
             }, (error) => {
-                // show the user an error
+                console.log(error);
             });
     };
 
@@ -33,7 +33,7 @@ const EmailContactForm = () => {
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>Message...</Form.Label>
-                    <Form.Control as="textarea" rows={3} id="email-form-group" />
+                    <Form.Control as="textarea" rows={3} name="message" />
                 </Form.Group>
                 <input type="submit" value="Send" />
             </Form>
